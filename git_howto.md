@@ -33,4 +33,8 @@ git checkout commit_ID
 ```
 где commit_ID - уникальный номер нужного коммита, присвоенного ему GITом
 
-git diff
+### Вывод в консоль разницы между двумя созданными коммитами:
+```sh
+git diff commit_ID1 commit_ID2
+```
+где commit_ID1 и commit_ID2 - ID нужных для данной операции коммитов
