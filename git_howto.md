@@ -27,5 +27,10 @@ git log
 git log --oneline
 ```
 
-git checkout
+### Переход к сохраненной ранее версии документа (к определенному коммиту):
+```sh
+git checkout commit_ID
+```
+где commit_ID - уникальный номер нужного коммита, присвоенного ему GITом
+
 git diff
