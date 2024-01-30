@@ -1,0 +1,3 @@
+[submodule "Course_02_Introduction_to_Version_control/02_seminar"]
+	path = Course_02_Introduction_to_Version_control/02_seminar
+	url = https://github.com/yellowpencil14/geekbrains.git
