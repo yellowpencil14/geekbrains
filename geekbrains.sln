@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Course_03_Introduction_to_programming_languages", "Course_03_Introduction_to_programming_languages", "{08D4E031-AE61-47C9-A4FB-E0C602F53C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_lection", "01_lection", "{98159787-9538-4551-A589-14A8D69F245A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1", "Course_03_Introduction_to_programming_languages\01_lection\Task1\Task1.csproj", "{20CF8722-B9B1-46D5-B0F3-A808F49BF247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CF8722-B9B1-46D5-B0F3-A808F49BF247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CF8722-B9B1-46D5-B0F3-A808F49BF247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CF8722-B9B1-46D5-B0F3-A808F49BF247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CF8722-B9B1-46D5-B0F3-A808F49BF247}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98159787-9538-4551-A589-14A8D69F245A} = {08D4E031-AE61-47C9-A4FB-E0C602F53C23}
+		{20CF8722-B9B1-46D5-B0F3-A808F49BF247} = {98159787-9538-4551-A589-14A8D69F245A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4B5501D-1F13-4952-8ABC-FE83007EA37F}
+	EndGlobalSection
+EndGlobal
