@@ -5,37 +5,27 @@
 
 using System;
 
-public class Answer {
-   static int FindMax(int a, int b, int c)
-   {
+public class Answer
+{
+    static int FindMax(int a, int b, int c)
+    {
         // Введите свое решение ниже
 
-        if (a > b)
+        int max = a;
+        if (b > max)
         {
-            if (a > c)
-            {
-                System.Console.WriteLine(a);
-            }
-            else
-            {
-                System.Console.WriteLine(c);
-            }
+            max = b;
         }
-        else
+        if (c > max)
         {
-            if (b > c)
-            {
-                System.Console.WriteLine(b);
-            }
-            else
-            {
-                System.Console.WriteLine(c);
-            }
+            max = c;
         }
+        return max;
     }
 
-// Не удаляйте и не меняйте метод Main! 
-    static public void Main(string[] args) {
+    // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args)
+    {
         int a, b, c;
 
         if (args.Length >= 3)
