@@ -1,18 +1,15 @@
 ﻿/*
 Задачи из раздела "Задания" (автотесты)
 
-Задача 1
+Задача 2
 
-Количество элементов массива на отрезке
+Количество чётных чисел в массиве
 
-Задайте одномерный массив из 10 целых чисел от 1 до 100.
-Найдите количество элементов массива,
-значения которых лежат в отрезке [10,90].
+Задайте массив на 10 целых чисел. Напишите программу, которая определяет количество чётных чисел в массиве.
 
 Начальные условия:
-int[] array = {1, 5, 10, 20, 30, 40, 99, 4, 90, 3}; // Создание массива
-
-Выводится: 5
+int[] array = {2, 5, 2, 3, 6, 3, 7, 8, 2, 4}; // Создание массива
+Выводится: 6
 */
 
 using System;
@@ -20,36 +17,30 @@ using System.Linq;
 
 //Тело класса будет написано студентом. Класс обязан иметь статический метод PrintResult()
 class UserInputToCompileForTest
-{ 
-    // Подсчет количества элементов массива, попадающих в заданный диапазон
+{
+    // Подсчет количества четных элементов массива
     // numbers - массив, в котором ведется подсчет
-    // minRange - минимальная граница диапазона
-    // maxRange - максимальная граница диапазона
-    public static int CountItemsRange(int[] numbers, int minRange, int maxRange)
+    public static int CountEvenItems(int[] numbers)
     {
-        //Введите сюда свое решение
+        //Напишите свое решение здесь
+
         int count = 0;
 
         foreach (int number in numbers)
-            if (number >= minRange && number <= maxRange)
+            if (number % 2 == 0)
                 count++;
-
+        
         return count;
     }
-    
+
     public static void PrintResult(int[] array)
     {
-        //Введите сюда свое решение
-        int minRange = 10;
-        int maxRange = 90;
+        //Напишите свое решение здесь
 
-        int count = CountItemsRange(array, minRange, maxRange);
-
-        Console.WriteLine(count);
+        int result = CountEvenItems(array);
+        Console.WriteLine(result);
     }
-
 }
-
 
 //Не удаляйте и не меняйте класс Answer!
 class Answer
@@ -57,9 +48,10 @@ class Answer
     public static void Main(string[] args)
     {
         int[] array;
-        
 
-        if (args.Length >= 1) {
+
+        if (args.Length >= 1)
+        {
             // Объединяем все аргументы командной строки в одну строку
             string joinedArgs = string.Join(" ", args);
 
@@ -67,12 +59,14 @@ class Answer
             array = joinedArgs.Split(", ")
                                   .Select(int.Parse)
                                   .ToArray();
-            
+
             // Теперь arr содержит преобразованные в целые числа из командной строки
-        
-        } else {
-           // Если аргументов на входе нет
-            array = new int[] {1, 5, 10, 20, 30, 40, 99, 4, 90, 3}; // Создание массива
+
+        }
+        else
+        {
+            // Если аргументов на входе нет
+            array = new int[] { 2, 5, 2, 3, 6, 3, 7, 8, 2, 4 }; // Создание массива
         }
         UserInputToCompileForTest.PrintResult(array);
     }
