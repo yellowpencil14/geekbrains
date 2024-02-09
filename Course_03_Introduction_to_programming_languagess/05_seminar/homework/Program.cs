@@ -1,5 +1,6 @@
 ﻿/*
-Задачи из презентации.
+Домашняя работа
+Задачи из презентации
 
 Задача 1
 Задайте одномерный массив из 10 целых чисел от 1 до 100. Найдите количество элементов массива,
@@ -22,7 +23,9 @@
 
 // Console.WriteLine($"В массиве содержится {count} элементов в отрезке [20,90]");
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /*
 Задача 2
@@ -51,6 +54,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 /*
 Задача 3
 Задайте массив из вещественных чисел с ненулевой дробной частью. Найдите разницу между
@@ -63,50 +67,61 @@
 
 Console.Clear();
 
-// МОЁ
-double[] array = new double[10];
-for (int i = 0; i < array.Length; i++)
-    array[i] = new Math.Round(Random().NextDouble() * 100 + 1, 2); // [1.00; 100.00] вещественный тип
-Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
-// МОЁ
+// // МОЁ
 
-// // GPT3
 // double[] array = new double[10];
-// Random random = new Random();
-// string format = "0.00"; // 2 цифры после точки
-
 // for (int i = 0; i < array.Length; i++)
-//     array[i] = Math.Round(random.NextDouble() * 100 + 1, 2); // округляем до 2 знаков после точки
+//     array[i] = new Math.Round(Random().NextDouble() * 100 + 1, 2); // [1.00; 100.00] вещественный тип
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// // МОЁ
 
-// Console.WriteLine($"Начальный массив: [{string.Join(", ", array.Select(x => x.ToString(format)))}]");
-// // GPT3
+// GPT3
 
-double min = array[0];
+double[] array = new double[10];
+Random random = new Random();
+string format = "0.00"; // 2 цифры после точки
+
+for (int i = 0; i < array.Length; i++)
+    array[i] = Math.Round(random.NextDouble() * 100 + 1, 2); // округляем до 2 знаков после точки
+
+Console.WriteLine($"Начальный массив: [{string.Join(", ", array.Select(x => x.ToString(format)))}]");
+
+// GPT3
+
+double min = array[0].3;
 double max = array[0];
 
 // // через foreach:
 // foreach (int j in array)
-//     if (min > array[j])
+// {
+//     if (array[j] < min)
 //         min = array[j];
-//     else if (max < array[j])
+//     else if (array[j] > max)
 //         max = array[j];
+//     else
+        
+// }
 
 // // через for:
 
-// for (int j = 0; min > array[j]; j++)
-//     min = array[j];
+for (int j = 1; array[j] < min; j++)
+    min = array[j];
 
-// for (int k = 0; max < array[k]; k++)
-//     max = array[k];
+for (int k = 1; array[k] > max; k++)
+    max = array[k];
 
-Console.WriteLine($"Разница между максимальным и минимальным элементоами массива: {max}");
+double result = max - min;
+
+Console.WriteLine($"Разница между максимальным и минимальным элементоами массива: {min}    {max}");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 /*
 Задача 4
-Дано натуральное число в диапазоне от 1 до 100 000. Создайте массив, состоящий из цифр этого числа.
+Дано натуральное число в диапазоне от 1 до 100 000.
+Создайте массив, состоящий из цифр этого числа.
 Старший разряд числа должен располагаться на 0-м индексе массива, младший – на последнем.
 Размер массива должен быть равен количеству цифр.
 
@@ -115,3 +130,4 @@ Console.WriteLine($"Разница между максимальным и мин
 8741 => [8 7 4 1]
 4 => [4]
 */
+
