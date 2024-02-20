@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Курс: Знакомство с языками программирования
+
+Семинар от 08.02.2024
+09
+
+Двумерные Массивы
+
+Дата: 
+*/
+
