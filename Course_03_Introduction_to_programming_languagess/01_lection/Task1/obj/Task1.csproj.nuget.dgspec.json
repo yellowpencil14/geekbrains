@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Геодезист\\Desktop\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj": {}
+    "C:\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Геодезист\\Desktop\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj": {
+    "C:\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Геодезист\\Desktop\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj",
+        "projectUniqueName": "C:\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj",
         "projectName": "Task1",
-        "projectPath": "C:\\Users\\Геодезист\\Desktop\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj",
+        "projectPath": "C:\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\Task1.csproj",
         "packagesPath": "C:\\Users\\Геодезист\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Геодезист\\Desktop\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\obj\\",
+        "outputPath": "C:\\geekbrains\\Course_03_Introduction_to_programming_languagess\\01_lection\\Task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Геодезист\\AppData\\Roaming\\NuGet\\NuGet.Config"
