@@ -25,19 +25,23 @@ int[,] numbers = new int[,] {
 
 using System;
 
-//Тело класса будет написано студентом. Класс обязан иметь статический метод PrintResult()
+// Тело класса будет написано студентом. Класс обязан иметь статический метод PrintResult()
 class UserInputToCompileForTest
 {
     // Печать массива
     public static void PrintArray(int[,] array)
     {
-        //Напишите свое решение здесь
+        // Напишите свое решение здесь
+        Console.WriteLine(array[,]);
     }
 
 // Обмен первой с последней строкой
     public static int[,] SwapFirstLastRows(int[,] array)
     {
-        //Напишите свое решение здесь
+        // Напишите свое решение здесь
+        int[] firstRow = array[0];
+        int[] lastRow = array[array(array.GetLength(1))];
+        
     }
 
 // Обмен элементами массива
