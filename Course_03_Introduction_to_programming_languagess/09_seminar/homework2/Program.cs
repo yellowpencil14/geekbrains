@@ -47,12 +47,12 @@ class UserInputToCompileForTest
 // Обмен элементами массива
     public static void SwapItems(int[,] array, int i)
     {
-       //Напишите свое решение здесь
+       // Напишите свое решение здесь
     }
 
     public static void PrintResult(int[,] numbers)
     {
-        //Напишите свое решение здесь
+        // Напишите свое решение здесь
     }
 }
 

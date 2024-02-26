@@ -22,27 +22,42 @@ int[,] numbers = new int[,] {
 
 using System;
 
-//Тело класса будет написано студентом. Класс обязан иметь статический метод PrintResult()
+// Тело класса будет написано студентом. Класс обязан иметь статический метод PrintResult()
 class UserInputToCompileForTest
 {
     // Вычисление сумм по строкам (на выходе массив с суммами строк)
     public static int[] SumRows(int[,] array)
     {
-      // Напишите свое решение здесь
+        // Напишите свое решение здесь
+        int[] sum = new int[array.GetLength(0)];
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+                sum[i] += array[i, j];
+        }
+        return sum;
     }
-    
+
     // Получение индекса минимального элемента в одномерном массиве
     public static int MinIndex(int[] array)
     {
-       //Напишите свое решение здесь
+        // Напишите свое решение здесь
+        int min = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] < array[min])
+                min = i;
+        }
+        return min;
     }
     public static void PrintResult(int[,] numbers)
     {   
-       //Напишите свое решение здесь
+       // Напишите свое решение здесь
+       Console.WriteLine(MinIndex(SumRows(numbers)));
     }
 }
 
-//Не удаляйте и не меняйте класс Answer!
+// Не удаляйте и не меняйте класс Answer!
 class Answer
 {
     public static void Main(string[] args)
