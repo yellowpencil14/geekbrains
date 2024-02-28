@@ -8,7 +8,6 @@
 Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
 
 Начальные условия:
-
 int[,] numbers = new int[,] {
     {1, 2, 3, 4},
     {5, 6, 7, 8},
@@ -16,7 +15,6 @@ int[,] numbers = new int[,] {
 }; 
 
 Выводится:
-
 9   10  11  12
 5   6   7   8
 1   2   3   4
@@ -31,28 +29,49 @@ class UserInputToCompileForTest
     // Печать массива
     public static void PrintArray(int[,] array)
     {
-        // Напишите свое решение здесь
-        Console.WriteLine(array[,]);
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+                Console.Write($"{array[i, j]}\t");
+            Console.WriteLine();
+        }
     }
 
 // Обмен первой с последней строкой
     public static int[,] SwapFirstLastRows(int[,] array)
     {
         // Напишите свое решение здесь
-        int[] firstRow = array[0];
-        int[] lastRow = array[array(array.GetLength(1))];
-        
+        for (int i = 0; i < array.GetLength(1); i++)
+        {
+            int temp = array[0, i];
+            array[0, i] = array[array.GetLength(0) - 1, i];
+            array[array.GetLength(0) - 1, i] = temp;
+        }
+        return array;
     }
 
 // Обмен элементами массива
     public static void SwapItems(int[,] array, int i)
     {
-       // Напишите свое решение здесь
+        // Напишите свое решение здесь
+        if (i < array.GetLength(0) - 1 && i >= 0)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                int temp = array[i, j];
+                array[i, j] = array[i + 1, j];
+                array[i + 1, j] = temp;
+            }
+        }
+        else
+            Console.WriteLine("Индекс выходит за пределы массива");
     }
 
     public static void PrintResult(int[,] numbers)
     {
         // Напишите свое решение здесь
+        int[,] swappedArray = SwapFirstLastRows(numbers);
+        PrintArray(swappedArray);
     }
 }
 
