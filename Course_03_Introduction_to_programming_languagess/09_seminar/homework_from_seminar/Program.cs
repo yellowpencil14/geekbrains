@@ -12,8 +12,6 @@
 */
 
 
-// Функции:
-
 void inputMatrix(int[,] matrix)
 {
 	for (int i = 0; i < matrix.GetLength(0); i++)
@@ -45,7 +43,7 @@ void deleteRowColWithMinElement(int[,] matrix)
 	}
 }
 
-// Программа:
+
 Console.Clear();
 
 Console.Write("Введите размеры 2D массива: ");
