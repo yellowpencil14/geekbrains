@@ -75,7 +75,7 @@ class UserInputToCompileForTest
     }
 }
 
-//Не удаляйте и не меняйте класс Answer!
+// Не удаляйте и не меняйте класс Answer!
 class Answer
 {
     public static void Main(string[] args)
