@@ -38,3 +38,13 @@ git checkout commit_ID
 git diff commit_ID1 commit_ID2
 ```
 где commit_ID1 и commit_ID2 - ID нужных для данной операции коммитов
+
+### Вывод в консоль состояния файлов в рабочем каталоге и индексе:
+```sh
+git status
+```
+
+### Удаление мусора из рабочего каталога:
+```sh
+git clean
+```
