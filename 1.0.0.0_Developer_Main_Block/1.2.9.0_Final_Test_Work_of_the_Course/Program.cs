@@ -19,3 +19,27 @@
 [“Russia”, “Denmark”, “Kazan”] → []
 */
 
+
+// Предлагаю пользователю 2 варианта ввода исходного массива
+Console.WriteLine("Выберите способ ввода:");
+Console.WriteLine("1 - Ввод массива одной строкой (через запятую)");
+Console.WriteLine("2 - Поэлементный ввод");
+
+str InputChoice = ConsoleReadLine();
+if InputChoice == "1":
+elif InputChoice == "2":
+else Console.WriteLine("Неверный ввод"); //дописать выбор варианта ввода потом
+
+
+
+
+// string[] array = (Console.ReadLine() switch
+// {
+//     "1" => InputAsString(),
+//     "2" => InputElementByElement(),
+//     _   => throw new Exception("Неверный выбор")
+// });
+
+
+// static string[] InputAsString() { ... }
+// static string[] InputElementByElement() { ... }
